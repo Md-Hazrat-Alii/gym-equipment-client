@@ -1,0 +1,94 @@
+.footer {
+    background: #1d1d1d;
+}
+
+.footer .copyright-info {
+    padding-bottom: 35px;
+    margin-top: 34px;
+}
+
+.footer .copyright-info p {
+    color: #999999;
+}
+
+.footer .store-info p {
+    color: #999999;
+}
+
+.footer button {
+    background: #1d1d1d;
+    color: white;
+    font-size: 32px;
+    font-weight: bolder;
+    font-style: italic;
+    border: 2px solid white;
+    margin-bottom: 20px;
+}
+
+.footer .information h5 , .account-information h5 {
+    font-weight: bolder;
+    font-style: italic;
+}
+
+.footer .information p , .account-information p {
+    color: #999999;
+}
+
+.footer .support .icon {
+    margin-right: 10px;
+    font-size: 18px;
+    color: #999999;
+}
+
+.footer .support p {
+    font-weight: 500;
+    color: white;
+}
+
+.footer .support p .under-text {
+    color: #999999;
+}
+
+@media only screen and (max-width:668px) {
+    .footer .footer-container {
+        display: flex;
+        flex-direction: column;
+        padding-left: 20px;
+        row-gap: 30px;
+    }
+
+    .footer .support .icon {
+        margin-right: 10px;
+    }
+
+    .footer .copyright-info {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        row-gap: 10px;
+    }
+
+    .footer .copyright-info img {
+        width: 90%;
+    }
+    .footer button {
+        font-size: 22px;
+    }
+}
+
+@media only screen and (min-width:669px) and (max-width:992px){
+    .footer .footer-container {
+      display: grid;
+      grid-template-columns: repeat(2,1fr);
+      justify-items: center;
+    }
+    .footer .account-information{
+        margin-right: 74px;
+        margin-top: 20px;
+    }
+    .footer .support{
+        margin-left: 120px;
+        margin-top: 20px;
+        margin-right: 20px;
+    }
+}

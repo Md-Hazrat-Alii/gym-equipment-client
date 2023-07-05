@@ -1,0 +1,134 @@
+.stored-products {
+    margin-top: 95px;
+    margin-bottom: 27px;
+}
+
+.stored-products .sub-title {
+    margin-bottom: 0;
+    text-align: center;
+    font-weight: bold;
+    color: #1d1d1d;
+}
+
+.stored-products .title {
+    font-style: italic;
+    font-weight: bold;
+}
+
+.stored-products .horizontal-line hr {
+    width: 2%;
+}
+
+.horizontal-line .hr-text {
+    margin-top: 4px;
+    color: #999999;
+}
+
+.products-container {
+    display: grid;
+    grid-template-columns: 268px 268px 268px;
+    grid-gap: 60px;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.card-container {
+    position: relative;
+    align-items: center;
+    width: 100%;
+    height: 330px;
+    text-align: justify;
+}
+
+.card-container img {
+    width: 100%;
+    height: 100%;
+}
+
+.card-container p {
+    margin-bottom: 0;
+}
+
+.product-details {
+    color: black;
+    font-style: italic;
+    font-weight: bold;
+    position: absolute;
+    bottom: 0;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.card-container:hover .product-details {
+    visibility: visible;
+    opacity: 1;
+    transform: rotate(360deg);
+    transition-duration: 20ms;
+    transition-timing-function: ease;
+}
+
+.card-container:hover img {
+    opacity: .6;
+}
+
+.product-details button {
+    background: #ec3642;
+    color: white;
+    font-weight: bold;
+    font-style: italic;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+}
+.product-details button:hover{
+    background: #1d1d1d;
+}
+
+.manage-btn {
+    border: none;
+    border-radius: 3px;
+    font-size: 18px;
+    color: white;
+    background-color: #ec3642;
+    margin-top: 50px;
+    padding: 10px 20px;
+}
+
+.manage-btn:hover {
+    background: #1d1d1d;
+}
+
+@media only screen and (max-width:668px) {
+    .products-container {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .card-container {
+        width: 90%;
+        margin: 0 auto;
+    }
+    .product-details button {
+        padding: 5px;
+        font-size: 12px;
+    }
+    .manage-btn {
+        font-size: 18px;
+    }
+
+}
+
+@media only screen and (min-width:669px) and (max-width:992px){
+    .products-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 20px;
+    }
+    .card-container {
+        width: 80%;
+        margin: 0 auto;
+    }
+    .product-details button {
+        padding: 7px;
+        font-size: 12px;
+    }
+}

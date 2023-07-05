@@ -1,0 +1,66 @@
+.login-form-container{
+    width: 50%;
+    margin: 40px auto;
+}
+.login-form-container form{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin: 0 auto;
+}
+form .submit-btn{
+    background: #ec3642;
+    border: none;
+    border-radius: 3px;
+    color: white;
+    padding: 5px;
+    width: 50%;
+    margin: 0 auto;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+form .submit-btn:hover{
+    background: #1d1d1d;
+}
+
+.horizontal-line{
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    margin-bottom: 10px;
+} 
+.horizontal-line hr{
+    width: 17%;
+}
+.horizontal-line p{
+    margin: 2px 8px 0;
+}
+
+@media only screen and (max-width:668px){
+    .login-form-container{
+        width: 75%;
+        margin: 40px auto;
+    }
+    .login-form-container form{
+        width: 100%;
+        margin: 0 auto;
+    }
+    .horizontal-line hr{
+        width: 40%;
+    }
+}
+
+@media only screen and (min-width:669px) and (max-width:1024px){
+    .login-form-container{
+        width: 45%;
+        margin: 40px auto;
+    }
+    .login-form-container form{
+        width: 100%;
+        margin: 0 auto;
+    }
+    .horizontal-line hr{
+        width: 30%;
+    }
+}
